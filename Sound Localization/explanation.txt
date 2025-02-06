@@ -1,0 +1,33 @@
+Note that since the angle necessary to create a distance difference of a certain size decreases as the distance between
+the sound source and microphone array increases, it's actually better to have the sound source quite far from the array,
+like the balance should be between accuracy and the sound being able to be captured.
+
+No Ignore that, the accuracy in terms of actual position is about the same, and even worse for being further away
+
+** Note sample_rate is 44100Hz - samples are taken every 1/44100 seconds
+However, these samples are put into audio_callback only after n samples are taken where n = blocksize
+
+Currently I made blocksize to be 1, to check if the labtop can handle that, and yes it can
+But the code requires continuously high energy levels to perceive a 'sound', and if every sample's energy is calculated, even
+in sounds of high magnitude there will be points in which the energy is lower than the threshold, stopping the 'event' right
+there and beginning a new 'event' immediately after
+
+Hence there will be multiple events in one 'sound', events will be all over the place...
+
+Ideally we'd calculate the average energy starting from the first sample the energy is above the threshold and sustain the 
+'event'
+
+Also the graph-drawing definitely struggles with the very large data size, only draws up to like 0.5s
+
+Reverted back to 1024 for now
+
+Okay Fixed it Yay
+
+python sound_detector_full.py
+
+conda activate newenv
+
+Currently 0 (DOA) is 'forward' in y direction
+
+m1 = "right", m2 = "left" if forward is where events are
+    and m1 - should be the index 2 mic and m2 index 3 mic
