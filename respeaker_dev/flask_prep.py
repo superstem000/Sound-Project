@@ -1,3 +1,4 @@
+"""
 from flask import Flask, request, jsonify
 import json
 import os
@@ -420,3 +421,4 @@ def analyze_transcripts():
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
+"""

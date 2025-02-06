@@ -1,3 +1,4 @@
+"""
 import subprocess
 import sys
 import os
@@ -27,6 +28,7 @@ RESPEAKER_WIDTH = 2
 RESPEAKER_INDEX = 5
 CHUNK = 1024
 RECORD_SECONDS = 7
+
 AWS_ACCESS_KEY_ID = 'AKIA5ILC25FLJDD4PYMI'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_REGION = 'us-east-2'
@@ -58,12 +60,14 @@ def time_str_to_float(time_str):
 
 def process_audio(wav_file, model_name):
     """
+    """
     Processes an audio file using a specified model and returns the processed string.
 
     :param wav_file: Path to the WAV file
     :param model_name: Name of the model to use
     :return: Processed string output from the audio processing
     :raises: Exception if an error occurs during processing
+    """
     """
 
     model = f"./whisper.cpp/models/ggml-{model_name}.bin"
@@ -219,3 +223,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+"""

@@ -21,7 +21,7 @@ RESPEAKER_INDEX = 1  # refer to input device id
 CHUNK = 1024
 CHUNKSIZE = 15 # sec
 
-
+"""
 AWS_ACCESS_KEY_ID = 'AKIA5ILC25FLJDD4PYMI'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_REGION = 'us-east-2'
@@ -33,7 +33,7 @@ s3 = boto3.client(
     aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
     region_name=AWS_REGION
 )
-
+"""
 def upload_to_s3(local_file_path, s3_path):
     try:
         s3.upload_file(local_file_path, S3_BUCKET_NAME, s3_path)
@@ -153,7 +153,7 @@ def word_to_num(word):
     }
     return mapping.get(word.lower(), 0)
 
-
+"""
 def upload_json_to_dynamodb(id_file, table_name):
     # Initialize a DynamoDB resource
     dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION,
@@ -187,7 +187,7 @@ def upload_json_to_dynamodb(id_file, table_name):
     # Upload the item to DynamoDB
     response = table.put_item(Item=item)
     print(f"Uploaded session 3 with all speakers to DynamoDB")
-
+"""
 def update_id_json(id_file, unknown_speakers):
 
     print(unknown_speakers)
