@@ -14,10 +14,10 @@ import argparse
 
 
 RESPEAKER_RATE = 16000
-RESPEAKER_CHANNELS = 6 # change base on firmwares, 1_channel_firmware.bin as 1 or 6_channels_firmware.bin as 6
+RESPEAKER_CHANNELS = 1 # change base on firmwares, 1_channel_firmware.bin as 1 or 6_channels_firmware.bin as 6
 RESPEAKER_WIDTH = 2
 # run getDeviceInfo.py to get index
-RESPEAKER_INDEX = 2  # refer to input device id
+#RESPEAKER_INDEX = 2  # refer to input device id
 CHUNK = 1024
 RECORD_SECONDS = 8 # enter seconds to run
 
@@ -27,13 +27,25 @@ def time_str_to_float(time_str):
     time_float = float(hours) * 3600 + float(minutes) * 60 + float(seconds) + float(milliseconds) / 1000
     return time_float
 
-def find_device():
-    dev = usb.core.find(idVendor=0x2886, idProduct=0x0018)
-    if dev is None:	
-        raise Exception("USB device not found.")
-    return dev
+def find_device(index):
+    devices = [dev for dev in usb.core.find(find_all=True, idVendor=0x2886, idProduct=0x0018) 
+           if any(usb.util.get_string(dev, intf.iInterface) == "SEEED Control" for cfg in dev for intf in cfg)]
 
-def open_audio_stream(p):
+    if not devices:
+        raise Exception("No USB devices found.")
+    if index >= len(devices):
+        raise Exception(f"Device index {index} out of range. Only {len(devices)} devices found.")
+    return devices[index]
+    # previously was return devices[index], added below
+    #device = devices[index]
+    # Loop through the device configurations and pick the one that has 'SEEED Control' in its interface
+    #for cfg in device:
+    #    for intf in cfg:
+    #        if 'SEEED Control' in usb.util.get_string(device, intf.iInterface):
+    #            return device
+    #raise Exception("Device with SEEED Control interface not found.")
+
+def open_audio_stream(p, RESPEAKER_INDEX):
     stream = p.open(
         rate=RESPEAKER_RATE,
         format=p.get_format_from_width(RESPEAKER_WIDTH),
@@ -106,14 +118,17 @@ def main():
 
     parser = argparse.ArgumentParser(description="directory")
     parser.add_argument("-d", "--directory", required=True, help="directory that will contain the dataset")
+    parser.add_argument("-i", "--index", required=True, help="index of current speaker")
     args = parser.parse_args()
     dir_name = args.directory
     dir_path = dir_name+'/assign_speaker/'
+    RESPEAKER_INDEX = int(args.index)
 
-    ID_file            = dir_path+'ID.json'
+    ID_file = dir_path + f'mic{args.index}ID.json'
     ID_list = {}
 
     # Start recording
+    """
     while True:
         value = input("Type add ID or stop: ")
         if value == 'stop':
@@ -137,7 +152,25 @@ def main():
 
         else:
             print("Invalid input. Please try again.")
-    
+    """
+
+    for i in range(1, 3):
+        std_id = str(i)
+        audio_file         = dir_path+'mic'+str(args.index)+'ID'+std_id+'.wav'
+        doa_file           = dir_path+'mic'+str(args.index)+'doa'+std_id+'.json'
+        # record audio
+        dev = find_device(int(args.index) - 2)
+        p = pyaudio.PyAudio()
+        stream = open_audio_stream(p, RESPEAKER_INDEX)
+        record_audio(stream, p, dev, audio_file, doa_file, std_id)
+        close_audio_stream(stream, p)
+
+        # Create ID file 
+        ID_list, median_doa = add_ID(ID_list, doa_file, std_id)
+
+    #Added
+    with open(ID_file, 'w') as f:
+        json.dump(ID_list, f, indent=4)
 
 
     

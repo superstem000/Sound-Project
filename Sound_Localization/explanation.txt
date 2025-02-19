@@ -31,3 +31,15 @@ Currently 0 (DOA) is 'forward' in y direction
 
 m1 = "right", m2 = "left" if forward is where events are
     and m1 - should be the index 2 mic and m2 index 3 mic
+
+_______________
+
+그 어댑터에서 선과 가장 가까운 포트 - 각 array를 마주보았을 때 선이 모두 오른쪽으로 향하고 있는 세팅 기준:
+오른쪽의 array 가 어댑터에서 선과 가장 가까운 포트에 '먼저' 들어간다
+
+이후 왼쪽의 array를 선에서 두번째로 가까운 포트에에
+
+open git bash
+conda activate newenv
+cd /c/Users/bhpar/Desktop/CS/Sound-Project/respeaker_dev
+./run_scripts.sh

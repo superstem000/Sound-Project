@@ -15,6 +15,9 @@ from collections import defaultdict
 import sys
 import argparse
 
+from edit_speaker import start_monitoring  # Import the monitoring function
+
+
 RESPEAKER_RATE = 16000
 RESPEAKER_CHANNELS = 1 # change base on firmwares, 1_channel_firmware.bin as 1 or 6_channels_firmware.bin as 6
 RESPEAKER_WIDTH = 2
@@ -35,14 +38,14 @@ s3 = boto3.client(
     aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
     region_name=AWS_REGION
 )
-"""
+
 def upload_to_s3(local_file_path, s3_path):
     try:
         s3.upload_file(local_file_path, S3_BUCKET_NAME, s3_path)
         print(f'Successfully uploaded {local_file_path} to {s3_path}')
     except Exception as e:
         print(f'Error uploading {local_file_path} to {s3_path}: {e}')
-
+"""
 def ang_shift(angle):
     shifted_angle = angle + 360
     return shifted_angle
@@ -65,12 +68,22 @@ def assign_angle(ID_file):
         #     print('The number of people does not match with the number of IDs')
 
 def find_device(index):
-    devices = list(usb.core.find(find_all=True, idVendor=0x2886, idProduct=0x0018))
+    devices = [dev for dev in usb.core.find(find_all=True, idVendor=0x2886, idProduct=0x0018) 
+           if any(usb.util.get_string(dev, intf.iInterface) == "SEEED Control" for cfg in dev for intf in cfg)]
+
     if not devices:
         raise Exception("No USB devices found.")
     if index >= len(devices):
         raise Exception(f"Device index {index} out of range. Only {len(devices)} devices found.")
     return devices[index]
+    # previously was return devices[index], added below
+    #device = devices[index]
+    # Loop through the device configurations and pick the one that has 'SEEED Control' in its interface
+    #for cfg in device:
+    #    for intf in cfg:
+    #        if 'SEEED Control' in usb.util.get_string(device, intf.iInterface):
+    #            return device
+    #raise Exception("Device with SEEED Control interface not found.")
 
 def open_audio_stream(p, RESPEAKER_INDEX):
     stream = p.open(
@@ -210,6 +223,7 @@ def main():
     parser.add_argument("-d", "--directory", required=True, help="directory that will contain the dataset")
     parser.add_argument("-s", "--second", required=True, help="recording duration")
     parser.add_argument("-i", "--index", required=True, help="Index of the ReSpeaker device")  # New argument for index
+    parser.add_argument("-o", "--other_index", required=True, help="Index of the other device") 
     parser.add_argument("-t", "--start_time", required=True, help="Shared start time for all recordings")  # Add start_time argument
     args = parser.parse_args()
     dir_name = args.directory
@@ -218,10 +232,13 @@ def main():
     start_time = float(args.start_time)  # Shared start time
 
     dir_path = dir_name + '/recorded_data/'
-    #subprocess.run(['python', 'assign_speaker_pi.py', '-d', dir_name], check=True)
+    #subprocess.run(['python', 'assign_speaker_pi.py', '-d', dir_name, '-i', args.index], check=True)
+    process = subprocess.Popen(['python', 'assign_speaker_pi.py', '-d', dir_name, '-i', args.index])
+    process.wait()  # Wait for it to finish
+
 
     # After assign_speaker.py completes, proceed with the rest of this script
-    #print("assign_speaker_pi.py has finished. Proceeding with the next part.")
+    print("assign_speaker_pi.py has finished. Proceeding with the next part.")
     
     #ID_file  = dir_name + '/assign_speaker/ID.json'
     sec = int(duration)
@@ -239,6 +256,12 @@ def main():
     #    id_str = '_'.join(map(str, filtered_numeric_ids))
 
 
+    # Directory path for storing JSON files
+    dir_path = 'data/recorded_data/'
+
+    # Start monitoring the directory for JSON pairs
+    start_monitoring(dir_path, args.index, args.other_index)
+
     # Start recording
     while True:
         if iteration >= sec:
@@ -247,7 +270,7 @@ def main():
             #upload_json_to_dynamodb(ID_file, 'Team_assignment')
             break
         else:
-            dev = find_device(RESPEAKER_INDEX - 2)
+            dev = find_device(int(args.index) - 2)
             p = pyaudio.PyAudio()
             stream = open_audio_stream(p, RESPEAKER_INDEX)
             iteration += CHUNKSIZE
@@ -262,13 +285,13 @@ def main():
             date_folder = datetime.now().strftime('%Y-%m-%d')
             audio_s3_path = f'audio-files/{date_folder}/{os.path.basename(audio_file)}'
             doa_s3_path = f'doa-files/{date_folder}/{os.path.basename(doa_file)}'
-            
+            """
             # # Upload audio file to S3
             upload_to_s3(audio_file, audio_s3_path)
 
             # # Upload doa file to S3
             upload_to_s3(doa_file, doa_s3_path)
-
+            """
             close_audio_stream(stream, p)
 
             print(str(iteration) + ' of '+ str(sec) + ' seconds are recorded')
