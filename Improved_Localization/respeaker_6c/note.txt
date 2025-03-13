@@ -1,0 +1,25 @@
+open git bash
+conda activate newenv
+cd /c/Users/bhpar/Desktop/CS/Sound-Project/Improved_Localization/respeaker_6c
+./run_scripts.sh
+
+python multi_array.py <directory> <device1_index> <device2_index> <chunk_number> [array_distance]
+
+- try 20-50ms windows for timeframe loop (with 50% overlap?)
+
+- currently checking all 360 angles --> Steered Response Power (SRP) with hierarchical search:
+Use a multi-resolution approach where you first check a sparse set of angles, then refine only in promising regions.
+
+
+
+okay here's what I'm thinking - we're currently using continuous tracking, using previous positions and stuff right?
+we can imagine a 'continuous' sound continuous for n seconds then stops
+now the first timeframe with this sound should not utilize beamforming / separation - rather just simple localization, 
+then the proceeding timeframes should utilize the previous position and everything
+
+A. we're presumably detecting whether a sound has occured/not based on intensity?
+B. what I was thinking was even for a 'continuous' sound, it's not going to be perhaps over the threshold for every single timeframe 
+in the duration, some timeframes may be missing etc
+* we may want to 'keep' the previous position for more than a single timeframe, but for several
+
+Wasn't sure how long this storage should be (how long of silence is true silence?)

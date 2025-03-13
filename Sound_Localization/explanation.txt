@@ -41,5 +41,5 @@ _______________
 
 open git bash
 conda activate newenv
-cd /c/Users/bhpar/Desktop/CS/Sound-Project/respeaker_dev
+cd /c/Users/bhpar/Desktop/CS/Sound-Project/respeaker_curr
 ./run_scripts.sh

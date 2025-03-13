@@ -1,0 +1,902 @@
+[
+    {
+        "doa": 207,
+        "timestamp": 1740679225.1186504,
+        "record_time": 62.38099932670593,
+        "speaker": "temp_151"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.182607,
+        "record_time": 62.444955825805664,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.3108022,
+        "record_time": 62.57315111160278,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.3746505,
+        "record_time": 62.6369993686676,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.5026672,
+        "record_time": 62.765016078948975,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.5666642,
+        "record_time": 62.82901310920715,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.694607,
+        "record_time": 62.956955909729004,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.7586799,
+        "record_time": 63.02102875709534,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679225.8866382,
+        "record_time": 63.14898705482483,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.014694,
+        "record_time": 63.277042865753174,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.0786943,
+        "record_time": 63.34104323387146,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.2066202,
+        "record_time": 63.468969106674194,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.2706554,
+        "record_time": 63.53300428390503,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.39866,
+        "record_time": 63.66100883483887,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.478659,
+        "record_time": 63.741007804870605,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.606619,
+        "record_time": 63.86896777153015,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.7186723,
+        "record_time": 63.98102116584778,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.78266,
+        "record_time": 64.04500889778137,
+        "speaker": "person3"
+    },
+    {
+        "doa": 208,
+        "timestamp": 1740679226.9107573,
+        "record_time": 64.17310619354248,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679226.9828987,
+        "record_time": 64.24524760246277,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679227.102672,
+        "record_time": 64.3650209903717,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679227.166615,
+        "record_time": 64.42896389961243,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679227.2946987,
+        "record_time": 64.55704760551453,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679227.3586571,
+        "record_time": 64.62100601196289,
+        "speaker": "person3"
+    },
+    {
+        "doa": 207,
+        "timestamp": 1740679227.4866138,
+        "record_time": 64.74896264076233,
+        "speaker": "person3"
+    },
+    {
+        "doa": 206,
+        "timestamp": 1740679227.614659,
+        "record_time": 64.8770079612732,
+        "speaker": "person3"
+    },
+    {
+        "doa": 206,
+        "timestamp": 1740679227.6786397,
+        "record_time": 64.94098854064941,
+        "speaker": "person3"
+    },
+    {
+        "doa": 205,
+        "timestamp": 1740679227.8065686,
+        "record_time": 65.06891751289368,
+        "speaker": "person3"
+    },
+    {
+        "doa": 205,
+        "timestamp": 1740679227.870676,
+        "record_time": 65.13302493095398,
+        "speaker": "person3"
+    },
+    {
+        "doa": 205,
+        "timestamp": 1740679227.9986975,
+        "record_time": 65.26104640960693,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679228.0787687,
+        "record_time": 65.34111762046814,
+        "speaker": "person3"
+    },
+    {
+        "doa": 205,
+        "timestamp": 1740679228.2067177,
+        "record_time": 65.46906661987305,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.318654,
+        "record_time": 65.58100295066833,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.3826942,
+        "record_time": 65.64504313468933,
+        "speaker": "person3"
+    },
+    {
+        "doa": 202,
+        "timestamp": 1740679228.5087788,
+        "record_time": 65.77112770080566,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.5746775,
+        "record_time": 65.83702635765076,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.7187188,
+        "record_time": 65.9810676574707,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.7806976,
+        "record_time": 66.04304647445679,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.9106517,
+        "record_time": 66.17300057411194,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679228.9746263,
+        "record_time": 66.23697519302368,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.1026635,
+        "record_time": 66.36501240730286,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.2147014,
+        "record_time": 66.47705030441284,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.278714,
+        "record_time": 66.54106283187866,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.4066126,
+        "record_time": 66.66896152496338,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.4846756,
+        "record_time": 66.74702453613281,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.6127315,
+        "record_time": 66.87508034706116,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.6767247,
+        "record_time": 66.93907356262207,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.8047025,
+        "record_time": 67.06705141067505,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.932753,
+        "record_time": 67.19510197639465,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679229.9987411,
+        "record_time": 67.26109004020691,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.1266274,
+        "record_time": 67.38897633552551,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.1747255,
+        "record_time": 67.4370744228363,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.3167117,
+        "record_time": 67.5790605545044,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.3807025,
+        "record_time": 67.64305138587952,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.508785,
+        "record_time": 67.77113389968872,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.5726619,
+        "record_time": 67.83501076698303,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.7006795,
+        "record_time": 67.96302843093872,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679230.830772,
+        "record_time": 68.09312081336975,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679230.8786862,
+        "record_time": 68.14103507995605,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679231.006901,
+        "record_time": 68.26924991607666,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679231.0866392,
+        "record_time": 68.34898805618286,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679231.2146676,
+        "record_time": 68.47701644897461,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.2766907,
+        "record_time": 68.5390396118164,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.4066253,
+        "record_time": 68.66897416114807,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.5346487,
+        "record_time": 68.79699754714966,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.5967448,
+        "record_time": 68.85909366607666,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.7247725,
+        "record_time": 68.98712134361267,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.7887013,
+        "record_time": 69.05105018615723,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.9166596,
+        "record_time": 69.17900848388672,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679231.9806738,
+        "record_time": 69.24302268028259,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.1088512,
+        "record_time": 69.37120008468628,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.1726332,
+        "record_time": 69.43498206138611,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.300698,
+        "record_time": 69.56304693222046,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.4286716,
+        "record_time": 69.69102048873901,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.4766765,
+        "record_time": 69.73902535438538,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.604658,
+        "record_time": 69.86700677871704,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.6846552,
+        "record_time": 69.94700407981873,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.8127983,
+        "record_time": 70.07514715194702,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679232.8766882,
+        "record_time": 70.13903713226318,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.0047,
+        "record_time": 70.2670488357544,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.1326673,
+        "record_time": 70.39501619338989,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.1967266,
+        "record_time": 70.45907545089722,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.3087265,
+        "record_time": 70.57107543945312,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.388728,
+        "record_time": 70.65107679367065,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.5166504,
+        "record_time": 70.77899932861328,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.5647798,
+        "record_time": 70.82712864875793,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.7086954,
+        "record_time": 70.9710443019867,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.7727091,
+        "record_time": 71.03505802154541,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679233.9007077,
+        "record_time": 71.16305661201477,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.0287766,
+        "record_time": 71.29112553596497,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.0927181,
+        "record_time": 71.35506701469421,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.2046757,
+        "record_time": 71.46702456474304,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.2846825,
+        "record_time": 71.54703140258789,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.4126909,
+        "record_time": 71.675039768219,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.4766839,
+        "record_time": 71.73903274536133,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.60482,
+        "record_time": 71.86716890335083,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.7327974,
+        "record_time": 71.99514627456665,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.7966645,
+        "record_time": 72.05901336669922,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.9246535,
+        "record_time": 72.18700242042542,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679234.9887257,
+        "record_time": 72.25107455253601,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679235.1166492,
+        "record_time": 72.37899804115295,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679235.1647136,
+        "record_time": 72.42706251144409,
+        "speaker": "person3"
+    },
+    {
+        "doa": 203,
+        "timestamp": 1740679235.2946546,
+        "record_time": 72.55700349807739,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679235.3747137,
+        "record_time": 72.63706254959106,
+        "speaker": "person3"
+    },
+    {
+        "doa": 204,
+        "timestamp": 1740679235.502592,
+        "record_time": 72.76494097709656,
+        "speaker": "person3"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679235.6308048,
+        "record_time": 72.89315366744995,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679235.6946235,
+        "record_time": 72.95697236061096,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679235.8066533,
+        "record_time": 73.06900215148926,
+        "speaker": "person4"
+    },
+    {
+        "doa": 333,
+        "timestamp": 1740679235.8866303,
+        "record_time": 73.14897918701172,
+        "speaker": "person4"
+    },
+    {
+        "doa": 333,
+        "timestamp": 1740679236.0148442,
+        "record_time": 73.27719306945801,
+        "speaker": "person4"
+    },
+    {
+        "doa": 333,
+        "timestamp": 1740679236.0787282,
+        "record_time": 73.34107708930969,
+        "speaker": "person4"
+    },
+    {
+        "doa": 333,
+        "timestamp": 1740679236.2066672,
+        "record_time": 73.46901607513428,
+        "speaker": "person4"
+    },
+    {
+        "doa": 333,
+        "timestamp": 1740679236.3346703,
+        "record_time": 73.59701919555664,
+        "speaker": "person4"
+    },
+    {
+        "doa": 333,
+        "timestamp": 1740679236.3986788,
+        "record_time": 73.66102766990662,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679236.5266232,
+        "record_time": 73.78897213935852,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679236.5907474,
+        "record_time": 73.85309624671936,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679236.7187164,
+        "record_time": 73.98106527328491,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679236.766631,
+        "record_time": 74.0289797782898,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679236.8946412,
+        "record_time": 74.15699005126953,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679236.9747088,
+        "record_time": 74.23705768585205,
+        "speaker": "person4"
+    },
+    {
+        "doa": 337,
+        "timestamp": 1740679237.1026726,
+        "record_time": 74.36502146720886,
+        "speaker": "person4"
+    },
+    {
+        "doa": 337,
+        "timestamp": 1740679237.2307713,
+        "record_time": 74.49312019348145,
+        "speaker": "person4"
+    },
+    {
+        "doa": 337,
+        "timestamp": 1740679237.294632,
+        "record_time": 74.55698084831238,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679237.4226825,
+        "record_time": 74.68503141403198,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679237.4708407,
+        "record_time": 74.7331895828247,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679237.5967083,
+        "record_time": 74.85905718803406,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679237.6768186,
+        "record_time": 74.93916749954224,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679237.806626,
+        "record_time": 75.06897497177124,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679237.9346547,
+        "record_time": 75.19700360298157,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679237.998717,
+        "record_time": 75.26106595993042,
+        "speaker": "person4"
+    },
+    {
+        "doa": 334,
+        "timestamp": 1740679238.1266928,
+        "record_time": 75.38904166221619,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.1906555,
+        "record_time": 75.45300436019897,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.3187592,
+        "record_time": 75.58110809326172,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.3666723,
+        "record_time": 75.62902116775513,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.4946845,
+        "record_time": 75.7570333480835,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.5746934,
+        "record_time": 75.83704233169556,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.7027042,
+        "record_time": 75.96505308151245,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.830937,
+        "record_time": 76.09328579902649,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679238.892848,
+        "record_time": 76.15519690513611,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.022663,
+        "record_time": 76.28501200675964,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.0847383,
+        "record_time": 76.34708714485168,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.198693,
+        "record_time": 76.46104192733765,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.278672,
+        "record_time": 76.54102087020874,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.40477,
+        "record_time": 76.6671187877655,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.5346901,
+        "record_time": 76.79703903198242,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.5987618,
+        "record_time": 76.86111068725586,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.7247908,
+        "record_time": 76.98713970184326,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.7887437,
+        "record_time": 77.0510926246643,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.916718,
+        "record_time": 77.1790668964386,
+        "speaker": "person4"
+    },
+    {
+        "doa": 336,
+        "timestamp": 1740679239.964896,
+        "record_time": 77.22724485397339,
+        "speaker": "person4"
+    }
+]

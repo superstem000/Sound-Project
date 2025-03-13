@@ -1,0 +1,5 @@
+One thing to consider: rather than applying the mask and then running GCC-PHAT on the separated signals, you could 
+potentially apply the masks directly in the GCC-PHAT calculation, weighting different time-frequency bins based on their 
+likely content. This might give you even better localization results.
+
+line 78 - see if 0.1 is 'too strong' or not (experiment with different values)

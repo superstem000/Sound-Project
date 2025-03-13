@@ -181,5 +181,5 @@ def process_all_files(folder_path, d):
     process_and_plot(data_1, data_2, d)
 
 
-distance_between_mics = 64  # Adjust as needed
+distance_between_mics = 50  # Adjust as needed
 process_all_files(".", distance_between_mics)
